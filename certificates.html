@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Abdullah Ahmed</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="particles-container" id="particles-container"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-traffic-light"></i>
+                    <span>Abdullah Ahmed</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                    <li><a href="index.html#projects" class="nav-link">Project</a></li>
+                    <li><a href="certificates.html" class="nav-link active">Certificates</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="lang-switch" id="lang-switch" aria-label="Language switcher">
+                        <button type="button" class="lang-btn active" data-lang="en">English</button>
+                    </div>
+                </div>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="certificates" class="certificates-page">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Training</h2>
+                <p class="section-subtitle">A comprehensive list of professional certificates and development programs.
+                </p>
+            </div>
+
+            <div class="certificate-categories">
+                <button class="category-btn active" data-category="all">All Certificates</button>
+                <button class="category-btn" data-category="professional">Professional Development</button>
+                <button class="category-btn" data-category="technical">Technical Skills</button>
+                <button class="category-btn" data-category="communication">Communication & Leadership</button>
+                <button class="category-btn" data-category="safety">Safety & Prevention</button>
+                <button class="category-btn" data-category="special">Specialized Training</button>
+            </div>
+
+            <div class="certificates-content">
+                <div class="certificates-grid" id="certificatesGrid">
+                    <div class="certificate-card floating-card professional" data-category="professional">
+                        <div class="cert-icon">🎯</div>
+                        <h3>McKinsey Forward Program</h3>
+                        <p class="cert-issuer">McKinsey & Company</p>
+                        <p class="cert-date">April 18, 2024</p>
+                        <div class="cert-skills">
+                            <span class="skill-badge">Problem-Solving</span>
+                            <span class="skill-badge">Effective Communication</span>
+                            <span class="skill-badge">Adaptive Mindset</span>
+                        </div>
+                    </div>
+                    <div class="certificate-card floating-card professional" data-category="professional">
+                        <div class="cert-icon">💡</div>
+                        <h3>Ideathon</h3>
+                        <p class="cert-issuer">Monsha'at</p>
+                        <p class="cert-date">April 21-23, 2024</p>
+                        <div class="cert-duration">18 hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card professional" data-category="professional">
+                        <div class="cert-icon">🌟</div>
+                        <h3>Ambitious Leaders Program</h3>
+                        <p class="cert-issuer">Al-Tomouh Institute</p>
+                        <p class="cert-date">October 2023</p>
+                        <div class="cert-status">Successfully completed all stages</div>
+                    </div>
+
+                    <div class="certificate-card floating-card professional" data-category="professional">
+                        <div class="cert-icon">🚀</div>
+                        <h3>SPARK Program</h3>
+                        <p class="cert-issuer">Misk Foundation for Entrepreneurship</p>
+                        <p class="cert-date">May 21 - July 31, 2024</p>
+                        <div class="cert-duration">24+ hours of direct training</div>
+                    </div>
+
+                    <div class="certificate-card floating-card professional" data-category="professional">
+                        <div class="cert-icon">👨‍🏫</div>
+                        <h3>TOT Trainer Training</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">August 23, 2023</p>
+                        <div class="cert-duration">25 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">📱</div>
+                        <h3>Fundamentals of Digital Marketing</h3>
+                        <p class="cert-issuer">Google in partnership with Injaz Saudi Arabia</p>
+                        <p class="cert-date">March 2024</p>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">🐍</div>
+                        <h3>Python Programming Basics I</h3>
+                        <p class="cert-issuer">Al-Madrasah</p>
+                        <div class="cert-status">Successfully completed</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">🐍</div>
+                        <h3>Python Programming Basics II</h3>
+                        <p class="cert-issuer">Al-Madrasah</p>
+                        <div class="cert-status">Successfully completed</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">🤖</div>
+                        <h3>Python Projects with ChatGPT</h3>
+                        <p class="cert-issuer">Al-Madrasah</p>
+                        <div class="cert-status">Successfully completed</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">💻</div>
+                        <h3>C# 101</h3>
+                        <p class="cert-issuer">Star Platform (Tuwaiq Academy)</p>
+                        <p class="cert-date">August 26, 2025</p>
+                        <div class="cert-duration">2 hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">💻</div>
+                        <h3>C# 102</h3>
+                        <p class="cert-issuer">Star Platform (Tuwaiq Academy)</p>
+                        <p class="cert-date">August 27, 2025</p>
+                        <div class="cert-duration">1 hour</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">🔗</div>
+                        <h3>Git & GitHub</h3>
+                        <p class="cert-issuer">Al-Madrasah</p>
+                        <div class="cert-status">Successfully completed</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">💼</div>
+                        <h3>Building a Professional LinkedIn Profile</h3>
+                        <p class="cert-issuer">Al-Madrasah</p>
+                        <div class="cert-status">Successfully completed</div>
+                    </div>
+
+                    <div class="certificate-card floating-card technical" data-category="technical">
+                        <div class="cert-icon">💬</div>
+                        <h3>ChatGPT Fundamentals</h3>
+                        <p class="cert-issuer">Al-Madrasah</p>
+                        <div class="cert-status">Successfully completed</div>
+                    </div>
+
+                    <div class="certificate-card floating-card communication" data-category="communication">
+                        <div class="cert-icon">💬</div>
+                        <h3>Effective Communication Skills</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">September 4, 2023</p>
+                        <div class="cert-duration">12 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card communication" data-category="communication">
+                        <div class="cert-icon">🎤</div>
+                        <h3>Developing Public Speaking Skills</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">April 9, 2024</p>
+                        <div class="cert-duration">6 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card communication" data-category="communication">
+                        <div class="cert-icon">🎯</div>
+                        <h3>Secrets of Self-Marketing and Career Path Building</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">September 7, 2023</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card communication" data-category="communication">
+                        <div class="cert-icon">🧠</div>
+                        <h3>Social Intelligence: Key to a Quality Life and the Art of Dealing with Others</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">June 26, 2023</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card communication" data-category="communication">
+                        <div class="cert-icon">🎩</div>
+                        <h3>The Six Hats / Applications</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">August 1, 2024</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card communication" data-category="communication">
+                        <div class="cert-icon">💼</div>
+                        <h3>How to Make Yourself Employable?</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">July 18, 2024</p>
+                        <div class="cert-duration">16 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card safety" data-category="safety">
+                        <div class="cert-icon">🩺</div>
+                        <h3>First Aid</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">March 27, 2023</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card safety" data-category="safety">
+                        <div class="cert-icon">🚒</div>
+                        <h3>Firefighting and Disaster Management</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">June 3, 2023</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card safety" data-category="safety">
+                        <div class="cert-icon">🚫</div>
+                        <h3>Fundamentals of Drug Prevention</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">July 8, 2023</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card safety" data-category="safety">
+                        <div class="cert-icon">⚠️</div>
+                        <h3>Drug Prevention Methods and the Definition of "Shabu" and its Harms</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">July 24, 2023</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card safety" data-category="safety">
+                        <div class="cert-icon">💊</div>
+                        <h3>Drugs and Addiction: Prevention and Treatment Methods</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">July 15, 2023</p>
+                        <div class="cert-duration">4 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card special" data-category="special">
+                        <div class="cert-icon">⚜️</div>
+                        <h3>Introductory Study for Scouting Unit Leadership</h3>
+                        <p class="cert-issuer">Deanship of Student Affairs - Imam Abdulrahman University</p>
+                        <p class="cert-date">March 27 - April 27, 2023</p>
+                        <div class="cert-duration">36 training hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card special" data-category="special">
+                        <div class="cert-icon">🎭</div>
+                        <h3>Training to Be a Theater Actor</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">April 2, 2024</p>
+                        <div class="cert-duration">4 hours</div>
+                    </div>
+
+                    <div class="certificate-card floating-card special" data-category="special">
+                        <div class="cert-icon">👥</div>
+                        <h3>Training Course for Student Club Presidents</h3>
+                        <p class="cert-issuer">Students Skills Development Center - Imam Abdulrahman University</p>
+                        <p class="cert-date">April 15, 2024</p>
+                        <div class="cert-duration">4 hours</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4 data-i18n="footer.name">Abdullah Ahmed</h4>
+                    <p data-i18n="footer.title">Traffic and Transportation Engineer</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/abdullah-aja" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:abdullah.aja@outlook.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p><span>&copy; 2025 </span><span data-i18n="footer.name">Abdullah Ahmed</span><span> · </span><span
+                            data-i18n="footer.rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+        </footer- <script src="app.js"></script>
+</body>
+
+</html>
