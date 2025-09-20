@@ -352,10 +352,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
+            contactForm.submit(); // يرسل البيانات مباشرة إلى FormSubmit.co
 
-            const mailtoLink = `mailto:abdullah.aja@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            showNotification('Success!', 'Your message has been sent successfully!', 'success');
 
-            window.location.href = mailtoLink;
 
             // Note: The notification is now redundant since the browser will handle the action.
             // You can remove it or modify it to indicate that an email client is being opened.
