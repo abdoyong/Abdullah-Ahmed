@@ -1058,13 +1058,17 @@ p {
   color: white;
   flex-shrink: 0;
   animation: none;
-  /* إيقاف التحريك التلقائي */
+  /*إيقافالتحريكالتلقائي*/
   transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
 }
 
 .project-card:hover .project-icon {
   animation: projectIconSpin 5s 1;
-  /*تشغيلالتحريكمرةواحدةعندالهوفر*/  
+  /*تشغيلالتحريكمرةواحدةعندالهوفر*/
   -webkit-animation: projectIconSpin 5s 1;
 }
 
