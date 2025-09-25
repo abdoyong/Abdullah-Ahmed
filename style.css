@@ -82,7 +82,7 @@
   --color-green: #22c55e;
 
   /* Overriding semantic colors with new custom colors */
-  --color-primary: var(--color-blue);
+  --color-primary: #4a4e69;
   --color-accent: var(--color-purple);
   --color-success: var(--color-green);
   --color-background: var(--color-black-custom);
@@ -93,6 +93,7 @@
   --color-card-border: rgba(147, 51, 234, 0.2);
   --color-card-border-inner: rgba(147, 51, 234, 0.15);
   --color-border: rgba(147, 51, 234, 0.3);
+  --color-blue-rgb: 59, 130, 246;
 
   /* Dynamic Gradients (Custom) */
   --gradient-primary: linear-gradient(135deg, var(--color-blue), var(--color-green));
@@ -112,7 +113,6 @@
   --color-error-rgb: 192, 21, 47;
   --color-warning-rgb: 168, 75, 47;
   --color-info-rgb: 98, 108, 113;
-  --color-blue-rgb: 59, 130, 246;
 
   /* Typography */
   --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
@@ -790,7 +790,14 @@ p {
   font-size: 24px;
   color: white;
   margin-bottom: var(--space-20);
-  animation: iconBounce 2s infinite;
+  animation: none;
+  /* إيقاف التحريك التلقائي */
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-card:hover .card-icon {
+  animation: iconBounce 1s 1;
+  /* تشغيل التحريك مرة واحدة عند الهوفر */
 }
 
 @keyframes iconBounce {
@@ -1050,10 +1057,19 @@ p {
   font-size: 32px;
   color: white;
   flex-shrink: 0;
-  animation: projectIconSpin 8s linear infinite;
+  animation: none;
+  /* إيقاف التحريك التلقائي */
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-card:hover .project-icon {
+  animation: projectIconSpin 5s 1;
+  /*تشغيلالتحريكمرةواحدةعندالهوفر*/  
+  -webkit-animation: projectIconSpin 5s 1;
 }
 
 @keyframes projectIconSpin {
+
   0% {
     transform: rotateY(0deg);
   }
@@ -1221,7 +1237,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-24);
   margin-top: var(--space-32);
-  margin-bottom: var(--space-32);
+  margin-bottom: 50px;
 }
 
 .certificate-card {
